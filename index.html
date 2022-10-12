@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset ="utf-8">
     <title>My Blog</title>
-    <script> src="blog.js"</script>
-
+    <script> 
+    function init() {
+    const testing = document.getElementById("test");
+    testing.innerHTML = "Had a lousy day bird-watching, it did nothing but rain";
+    console.log(testing.innerHTML);
+    }
+    window.onload = init;
+</script>
 </head>
 <body> 
     <h1>My Blog</h1>
     <div id="entry1">
     <h2>Great day bird watching</h2>
-    <p>Today I saw three ducks! I named them
+    <p id = "test">Today I saw three ducks! I named them
         Huey, Louie and Dewey</p>
     <p>I took a couple of photos</p>
+    
 </div>
 </body>
 </html>
