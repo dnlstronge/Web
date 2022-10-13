@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style> 
+    .redText {
+        color: red;
+    };
+    </style>
     <meta charset ="utf-8">
     <title>My Blog</title>
     <script> 
     function init() {
     const testing = document.getElementById("test");
     testing.innerHTML = "Had a lousy day bird-watching, it did nothing but rain";
-    console.log(testing.innerHTML);
+    testing.setAttribute("class", "redText");
     }
     window.onload = init;
 </script>
