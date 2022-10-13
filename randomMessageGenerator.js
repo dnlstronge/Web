@@ -18,7 +18,7 @@ function callExposition() {
                 ]
     var words4 = [" Ain't nothing good can come of it I tell ye",
                 " lily-livered plain ol' tom-foolery if you asks me",
-                " Has more than he sheep a'worrying I'd say",
+                " Has more than the sheep a'worrying I'd say",
                 " Much a do about nothing I reckons"]
 
 var rand1 = Math.floor(Math.random() * words1.length);
