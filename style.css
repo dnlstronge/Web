@@ -8,17 +8,17 @@ body {
     
 }
 
-.work {
+.banner {
     display: flex;
     background-color: rgb(13, 14, 13);
     width: auto;
-    height: 160px;
+    height: 100px;
     z-index: 1;
     color: rgb(243, 237, 237);
     font-family: 'Courier New', Courier, monospace;
     border: solid 2px rgb(83, 83, 81);
     border-radius: 3px;
-    opacity: 90%;
+    opacity: 0.9;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
     text-decoration: wavy;
@@ -26,22 +26,32 @@ body {
     text-shadow: 1px;
     text-align: center;
     padding-top: 25px;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
 
+
+}
+.bannerT {
+    display: flex;
+    color: antiquewhite;
+    width: 40%;
+    height: 20%;
 }
 .mainBox {
     position: relative;
     display:flex;
     width: auto;
-    height: 500px;
+    height: 700px;
     background-color: rgb(55, 80, 45);
     margin-right: 20px;
     margin-left: 20px;
     background-image: linear-gradient(rgba(143, 140, 140, 0.342), rgb(192, 207, 192));
-    border:rgb(55, 80, 45) solid;
-    border-style: inset;
+    
+    
     border-radius: 3px;
-    opacity: 0.8;
+    opacity: 0.95;
     z-index: 0;
 }
 
@@ -57,11 +67,13 @@ body {
     font-size: 16px;
     font-weight: bold;
     border: solid 3px rgb(83, 83, 81);
-    border-radius: 5px;
-    padding: 10px 10px;
+    border-radius: 10px;
+    padding: 10px;
     margin-bottom: 15px;
     Margin-left: 15px;
-    opacity: 0.9;
+    margin-top: 20px;
+    padding-top: 30px;
+    opacity: 1;
 
 }
 .container1 {
@@ -69,7 +81,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 600px;
     width: 700px;
     color: rgb(226, 226, 216);
     background-color: rgb(17, 17, 16);
@@ -77,7 +89,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     border: solid 3px rgb(83, 83, 81);
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 10px;
     margin-bottom: 15px;
     margin-top: 15px;
@@ -101,13 +113,20 @@ body {
     margin-bottom: 10px;
     padding-left: 10px;
     z-index: 4;
+    transition: background-color 1s ease-out 100ms;
+    opacity: 0.9;
     
 
 }
 .boxRight1a:hover {
     opacity: 1;
     background-color: black;
-    background-color: linear-gradient white black, grey};
+    background-color: linear-gradient white black, grey;
+    cursor: pointer;
+    width: 660;
+    z-index: 5;
+    
+}
 .boxright1aH {
     display: flex;
     z-index: 5;
@@ -126,5 +145,59 @@ body {
     padding-left: 10px;
     margin-left: 10px;
   
-};
+}
+.boxRightEnd {
+display: flex;
+background-color: antiquewhite;
+height: 650px;
+width: 200px;
+align-items: center;
+justify-content: column;
+margin-left: 10px;
+margin-right: 10px;
 
+border-radius: 10px;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+.rightEndMenu {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+    padding-right: 15px;
+    background-color: rgb(236, 203, 159);
+    height: 600px;
+    width: 100px;
+    flex-direction: column;
+    font-size: 14px;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+.rightEndB {
+    display: flex;
+    margin: 5px;
+    margin-right: 15px;
+    padding-right: 5px;
+    background-color: rgb(61, 56, 56);
+    color: antiquewhite;
+    font-weight: bold;
+    height: 15%;
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+}
+.rightEndB:hover {
+    background-color: black;
+    opacity: 1;
+    background-image: linear-gradient(rgb(255, 249, 249) black, grey);
+    cursor: pointer;
+    transition: background-color 1s ease-out 100ms
+
+};
