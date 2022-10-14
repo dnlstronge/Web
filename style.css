@@ -18,6 +18,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     border: solid 2px rgb(83, 83, 81);
     border-radius: 3px;
+    border-top-right-radius: 35px;
     opacity: 0.9;
     font-family:'Courier New', Courier, monospace;
     font-weight: bold;
@@ -30,14 +31,27 @@ body {
     flex-direction: column;
     align-content: flex-start;
     align-items: flex-start;
+    margin: 20px;
 
 
 }
 .bannerT {
     display: flex;
-    color: antiquewhite;
-    width: 40%;
-    height: 20%;
+    color: rgb(27, 26, 24);
+    background-color:rgb(236, 203, 159);
+    width: 90%;
+    height: 30px;
+    padding-top: 5px;
+    border-top-right-radius: 35px;
+}
+.bannerT2 {
+    display: flex;
+    color: rgb(27, 26, 24);
+    background-color:rgb(105, 83, 54);
+    width: 90%;
+    height: 15px;
+    padding-top: 5px;
+    
 }
 .mainBox {
     position: relative;
@@ -50,7 +64,7 @@ body {
     background-image: linear-gradient(rgba(143, 140, 140, 0.342), rgb(192, 207, 192));
     
     
-    border-radius: 3px;
+    border-radius: 8px;
     opacity: 0.95;
     z-index: 0;
 }
@@ -83,7 +97,7 @@ body {
     flex-direction: column;
     height: 600px;
     width: 700px;
-    color: rgb(226, 226, 216);
+    color: rgb(82, 82, 71);
     background-color: rgb(17, 17, 16);
     z-index: 3;
     font-size: 16px;
@@ -113,8 +127,10 @@ body {
     margin-bottom: 10px;
     padding-left: 10px;
     z-index: 4;
-    transition: background-color 1s ease-out 100ms;
+    transition: all 1s ease-out 50ms;
     opacity: 0.9;
+    border-top-right-radius: 40px;
+   
     
 
 }
@@ -125,6 +141,12 @@ body {
     cursor: pointer;
     width: 660;
     z-index: 5;
+    background-image: url(./img/projectButtons.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:rgb(252, 250, 248);
+    
+
     
 }
 .boxright1aH {
@@ -135,6 +157,7 @@ body {
     align-self: left;
     padding-left: 10px;
     margin-left: 10px;
+    color: antiquewhite;
 
 }
 .boxright1aP {
@@ -144,11 +167,26 @@ body {
     z-index: 6;
     padding-left: 10px;
     margin-left: 10px;
+    transition: all 1s ease-out 50ms;
+    opacity: 0;
+    color: rgb(53, 51, 49);
+
+  
+}
+.boxright1aP:hover {
+    background-color: rgb(247, 247, 247);
+    width: 500;
+    height: 250px;
+    z-index: 6;
+    padding-left: 10px;
+    margin-left: 10px;
+    
+    opacity: 0.95;
   
 }
 .boxRightEnd {
 display: flex;
-background-color: antiquewhite;
+background-color: rgb(44, 40, 35);
 height: 650px;
 width: 200px;
 align-items: center;
@@ -175,15 +213,16 @@ margin-bottom: 5px;
     justify-items: flex-start;
     justify-content: flex-start;
     align-items: flex-start;
+    border-top-right-radius: 14px;
 
 }
 .rightEndB {
     display: flex;
     margin: 5px;
     margin-right: 15px;
-    padding-right: 5px;
-    background-color: rgb(61, 56, 56);
-    color: antiquewhite;
+    padding-right: 25px;
+    background-color: rgb(25, 29, 26);
+    color: rgb(173, 167, 159);
     font-weight: bold;
     height: 15%;
     width: 90%;
@@ -191,13 +230,18 @@ margin-bottom: 5px;
     border-radius: 10px;
     padding-left: 5px;
     padding-top: 5px;
-    
+    transition: background-color 1s ease-out 50ms;
 }
 .rightEndB:hover {
-    background-color: black;
+    background-color: rgb(87, 129, 98);
     opacity: 1;
-    background-image: linear-gradient(rgb(255, 249, 249) black, grey);
+    background-image: url("./img/sideButtons3.jpg");
+    background-size: 95% 95%;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+   
     cursor: pointer;
-    transition: background-color 1s ease-out 100ms
+    
+    color: antiquewhite;
 
 };
