@@ -10,11 +10,11 @@ body {
 
 .work {
     display: flex;
-    background-color: rgb(100, 104, 91);
+    background-color: rgb(13, 14, 13);
     width: auto;
     height: 160px;
     z-index: 1;
-    color: black;
+    color: rgb(243, 237, 237);
     font-family: 'Courier New', Courier, monospace;
     border: solid 2px rgb(83, 83, 81);
     border-radius: 3px;
@@ -31,32 +31,100 @@ body {
 }
 .mainBox {
     position: relative;
-    display:inline-flex;
+    display:flex;
     width: auto;
-    height: 440px;
+    height: 500px;
     background-color: rgb(55, 80, 45);
-    opacity: 90%;
+    margin-right: 20px;
     margin-left: 20px;
-    background-image: linear-gradient(rgb(179, 129, 129), rgb(90, 131, 90));
+    background-image: linear-gradient(rgba(143, 140, 140, 0.342), rgb(192, 207, 192));
     border:rgb(55, 80, 45) solid;
     border-style: inset;
     border-radius: 3px;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 .boxLeft {
     position: relative;
     font-family: 'Courier New', Courier, monospace;
-    display: flexbox;
+    display: flex;
     height: 400px;
     width: 280px;
-    color: rgb(83, 83, 81);
-    background-color: rgb(224, 224, 163);
-    z-index: 999;
+    color: rgb(240, 240, 229);
+    background-color: rgb(17, 17, 15);
+    z-index: 2;
     font-size: 16px;
     font-weight: bold;
     border: solid 3px rgb(83, 83, 81);
     border-radius: 5px;
-    padding: 10px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
     Margin-left: 15px;
+    opacity: 0.9;
 
+}
+.container1 {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 700px;
+    color: rgb(226, 226, 216);
+    background-color: rgb(17, 17, 16);
+    z-index: 3;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 3px rgb(83, 83, 81);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    Margin-left: 15px;
+    opacity: 1;
+}
+.boxRight1a {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: rgb(24, 23, 22);
+    height: 200px;
+    width: 650px;
+    border: 2px solid whitesmoke;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    z-index: 4;
+    
+
+}
+.boxRight1a:hover {
+    opacity: 1;
+    background-color: black;
+    background-color: linear-gradient white black, grey};
+.boxright1aH {
+    display: flex;
+    z-index: 5;
+    height: 50px;
+    width: 80px;
+    align-self: left;
+    padding-left: 10px;
+    margin-left: 10px;
+
+}
+.boxright1aP {
+    background-color: rgb(53, 51, 49);
+    width: 500;
+    height: 250px;
+    z-index: 6;
+    padding-left: 10px;
+    margin-left: 10px;
+  
 };
+
