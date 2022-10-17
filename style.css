@@ -149,6 +149,42 @@ body {
 
     
 }
+.boxRight1b {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    background-color: rgb(24, 23, 22);
+    height: 200px;
+    width: 650px;
+    border: 2px solid whitesmoke;
+    align-items: flex-start;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    z-index: 4;
+    transition: all 1s ease-out 50ms;
+    opacity: 0.9;
+    border-top-right-radius: 40px;
+   
+    
+
+}
+.boxRight1b:hover {
+    opacity: 1;
+    background-color: black;
+    background-color: linear-gradient white black, grey;
+    cursor: pointer;
+    width: 660;
+    z-index: 5;
+    background-image: url(./img/battleships.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:rgb(252, 250, 248);
+}
 .boxright1aH {
     display: flex;
     z-index: 5;
