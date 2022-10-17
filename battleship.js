@@ -1,8 +1,12 @@
 //Game objects:
 
 
+//global
 
-
+//sound effects
+var splash = new Audio("splash.mp3");
+var blast = new Audio("blast.mp3");
+var sunk = new Audio("sunk.mp3")
 //MODEL: games-state data
 
 var model = {
@@ -32,15 +36,18 @@ var model = {
 				ship.hits[index] = "hit";
 				view.displayHit(guess);
 				view.displayMessage("HIT!");
+                blast.play();
             if (this.isSunk(ship)) {
                 view.displayMessage("You sank my battleship!");
+                sunk.play();
                 this.shipsSunk++;
             }
             return true;
           }
         }
         view.displayMiss(guess);
-        view.displayMessage("You missed.");
+        view.displayMessage("MISS!");
+        splash.play();
         return false;
     },
 

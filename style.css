@@ -185,6 +185,12 @@ body {
     background-repeat: no-repeat;
     color:rgb(252, 250, 248);
 }
+#project1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    color: antiquewhite;
+    text-decoration: none;
+}
 .boxright1aH {
     display: flex;
     z-index: 5;
